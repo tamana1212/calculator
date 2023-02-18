@@ -2,7 +2,12 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+*::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     display:flex;
     align-items: center;
@@ -25,6 +30,7 @@
  margin:3px 3px;
  border-radius: 10px;
  font-size:25px;
+ color:black;
 }
 
 .calculator input[type="text"] {
@@ -48,21 +54,32 @@
 }
 
 #history{
+    position: relative;
     width: 350px;
     margin-left: 20px;
     border-radius: 10px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align:center;
     background-color: #404258;
     height: 565px;
     color:white;
     opacity: 0.8;
-    display: none
+    display: none;
+    overflow: scroll;
 }
+#history h1 {
+    padding: 20px 0px 10px 0px;
+    background-color: #404258;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
 
 #history p {
     padding-top: 20px;
     font-size: 25px;
+    /* position: fixed; */
 }
 
 @media screen and (max-width: 800px){
