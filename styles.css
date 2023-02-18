@@ -8,6 +8,10 @@
     display: none;
 }
 
+body {
+    background-color: #6B728E;
+}
+
 .container {
     display:flex;
     align-items: center;
@@ -58,7 +62,7 @@
     width: 350px;
     margin-left: 20px;
     border-radius: 10px;
-    /* padding-top: 20px; */
+    padding-bottom: 30px;
     text-align:center;
     background-color: #404258;
     height: 565px;
@@ -79,15 +83,16 @@
 #history p {
     padding-top: 20px;
     font-size: 25px;
-    /* position: fixed; */
-}
-
+} 
 @media screen and (max-width: 800px){
     .container{
     flex-direction: column;
     gap:20px;
+    height:auto;
+    padding: 60px 0px;
     }
     #history{
         margin-left: -2px;
+
     }
 }
